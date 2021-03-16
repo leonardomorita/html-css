@@ -6,23 +6,60 @@
   </head>
 
   <body>
-    <form>
-      <label for="first-name">First Name:</label>
-      <input type="text" id="first-name" name="firstName">
+    <section>
+      <aside>
+        <form>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="firstName">
+    
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="lastName">
+    
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email">
+    
+          <label for="telephone">Telephone</label>
+          <input type="tel" id="telephone" name="telephone">
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+    
+          <select>
+            <option>Red</option>
+            <option>Orange</option>
+            <option>Yellow</option>
+          </select>
+        </form>
+      </aside>
+    </section>
 
-      <label for="last-name">Last Name:</label>
-      <input type="text" id="last-name" name="lastName">
+    <section>
+      <aside>
+        <form>
+          <label for="select-color">Color:</label>
+          <select name="color" id="select-color">
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+          </select>
 
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email">
+          <fieldset>
+            <legend>Meal:</legend>
+            <input type="radio" name="meal" id="breakfast" value="breakfast"><label for="breakfast">Breakfast</label>
+            <input type="radio" name="meal" id="brunch" value="brunch"><label for="brunch">Brunch</label>
+            <input type="radio" name="meal" id="lunch" value="lunch"><label for="lunch">Lunch</label>
+          </fieldset>
 
-      <label for="telephone">Telephone</label>
-      <input type="tel" id="telephone" name="telephone">
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message"></textarea>
-
-      <input type="submit" value="Submit">
-    </form>
+          <fieldset>
+            <legend>Meals:</legend>
+            <input type="checkbox" name="meals" id="checkbox-breakfast" value="breakfast"><label for="checkbox-breakfast">Breakfast</label>
+            <input type="checkbox" name="meals" id="checkbox-brunch" value="brunch"><label for="checkbox-brunch">Brunch</label>
+            <input type="checkbox" name="meals" id="checkbox-lunch" value="lunch"><label for="checkbox-lunch">Lunch</label>
+          </fieldset>
+    
+          <input type="submit" value="Save">
+        </form>
+      </aside>
+    </section>
   </body>
 </html>
